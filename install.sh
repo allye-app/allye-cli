@@ -101,7 +101,7 @@ main() {
 
   info "Installing allye ${version} for ${platform}..."
 
-  asset_name="allye_${version}_${platform}.tar.gz"
+  asset_name="allye_${version#v}_${platform}.tar.gz"
   asset_url="https://github.com/${REPO}/releases/download/${version}/${asset_name}"
   checksum_url="https://github.com/${REPO}/releases/download/${version}/checksums.txt"
 
